@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF">
+
+    <include
+        android:id="@+id/atas"
+        layout="@layout/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:paddingTop="3dp"
+        android:text="Buat Daftar Buku"
+        android:textAlignment="center"
+        android:layout_below="@id/atas"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/for_box"
+        android:layout_marginHorizontal="75dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/atas"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/for_box">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text=" Judul Buku"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/editjudul"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Judul"
+            android:ems="10"
+            android:inputType="textCapWords"
+            android:textColor="#000"
+            android:textColorHint="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text=" Nama Peminjam"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/editpeminjam"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Peminjam"
+            android:ems="10"
+            android:inputType="textCapWords"
+            android:textColor="#000"
+            android:textColorHint="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text=" No. Handphone"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/editnohp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="No. HP"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#000"
+            android:textColorHint="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text=" Dipinjam Dari"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/editdipinjam"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Dipinjamkan"
+            android:ems="10"
+            android:inputType="textCapWords"
+            android:textColor="#000"
+            android:textColorHint="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/kirimbro"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="18sp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="BUAT"
+            android:textColor="#FFF"
+            android:background="@drawable/btn_style"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

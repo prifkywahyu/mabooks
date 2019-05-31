@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary">
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context="com.developer.rifky.mabooks.MainActive"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher_mabooks"/>
+
+        <TextView
+            android:id="@+id/produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mabooks"
+            android:textSize="25sp"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingTop="3dp"
+        android:text="Masuk"
+        android:textAlignment="center"
+        android:layout_below="@id/top"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/for_box"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/for_box">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text=" Nama Pengguna"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:layout_gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:hint="Nama"
+            android:textColor="#000"
+            android:textColorHint="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text=" Kata Sandi"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:layout_gravity="center_vertical"
+            android:hint="Sandi"
+            android:textColor="#000"
+            android:textColorHint="@color/colorAccent"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:text="Masuk"
+            android:textSize="18sp"
+            android:textColor="#FFF"
+            android:background="@drawable/btn_style"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
+
+    <Button
+        android:id="@+id/getlogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Lihat Nama dan Kata Sandi disini."
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:background="#FFF"/>
+
+</RelativeLayout>

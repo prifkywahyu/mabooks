@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".HomeActive">
+
+    <include layout="@layout/toolbar_main"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Selamat Datang di Mabooks"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btn_profil"
+        android:layout_below="@id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Lihat Data Profil"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_style"/>
+
+    <Button
+        android:id="@+id/btn_caribuku"
+        android:layout_below="@id/btn_profil"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Cari Buku Favorit"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/btn_style"/>
+
+    <Button
+        android:id="@+id/btn_tentang"
+        android:layout_below="@id/btn_caribuku"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Tentang Mabooks"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/btn_style"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_oke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/btn_tentang"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ems="10"
+            android:hint="Email"
+            android:drawableEnd="@drawable/ic_home_black_24dp"
+            android:drawablePadding="10dp"
+            android:maxLines="1"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pass_oke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/email_oke"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ems="10"
+            android:hint="No. HP"
+            android:drawableEnd="@drawable/ic_home_black_24dp"
+            android:drawablePadding="10dp"
+            android:maxLines="1"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add_circle_black_24dp"
+            app:background="@color/colorAccent"
+            app:backgroundTint="@color/colorList"
+            tools:layout_editor_absoluteX="-20dp" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>
